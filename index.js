@@ -1,14 +1,18 @@
-let name='Mosh'//String literal
-let age=30; //Number literal
-let isApproved = false; //Boolean literal
-let firstName; //by default value is undefined
-let lastName = null; // value is initially null
+let person ={
+    name : 'Maharoz',
+    age :30
+};
 
-/*
+// Dot notation to change property value
 
-by writting 
-    typeof isApproved 
-    -->"boolean"
+person.name = 'mugdho';
 
-*/
+//Bracket notation to change property value
+person['name'] = 'smrity'
+
+//Bracket notation in dynamic way
+let selection = 'name';
+person[selection = 'smrity']
+
+console.log(person.name);
 
