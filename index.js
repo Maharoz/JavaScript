@@ -1,10 +1,8 @@
-//strict Equality(Type + Value)
+// If a customer has more than 100 points,
+//they are 'gold' customer, otherwise,
+//they are a 'silver' customer.
 
-console.log(1 === 1); //true
-console.log('1' === 1); //false
+let points = 110;
+let type = points>100 ? 'gold' : 'silver';
 
-//lose equality
-
-console.log(1==1); //true
-console.log('1'==1); //true
-console.log(true ==1); //true
+console.log(type);
