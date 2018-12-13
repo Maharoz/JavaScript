@@ -1,9 +1,10 @@
-//Array is an object in javascript
-let selectedColors = ['red', 'blue']; //array with two element
+let number = 1;
 
-selectedColors[2] = 1; //adding another elements in position 2
 
-console.log(selectedColors[0]); // showing the first element of array
-console.log(selectedColors); // showing all element of array
-console.log(selectedColors.length); // showing length of array
+//creating function
+function greet(name){
+    console.log('hello ' + name);
+}
 
+
+greet('maharoz'); //calling function
