@@ -1,18 +1,9 @@
-let person ={
-    name : 'Maharoz',
-    age :30
-};
+//Array is an object in javascript
+let selectedColors = ['red', 'blue']; //array with two element
 
-// Dot notation to change property value
+selectedColors[2] = 1; //adding another elements in position 2
 
-person.name = 'mugdho';
-
-//Bracket notation to change property value
-person['name'] = 'smrity'
-
-//Bracket notation in dynamic way
-let selection = 'name';
-person[selection = 'smrity']
-
-console.log(person.name);
+console.log(selectedColors[0]); // showing the first element of array
+console.log(selectedColors); // showing all element of array
+console.log(selectedColors.length); // showing length of array
 
