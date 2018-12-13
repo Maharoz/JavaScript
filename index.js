@@ -1,1 +1,2 @@
-console.log('hello-world');
+let name = 'Maharoz'; //variable
+console.log(name);
