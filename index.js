@@ -1,16 +1,10 @@
- let x = 1;
+//strict Equality(Type + Value)
 
+console.log(1 === 1); //true
+console.log('1' === 1); //false
 
- //Relational
- console.log(x > 0);
+//lose equality
 
- console.log(x >= 1);
-
- console.log(x < 1);
-
- console.log(x <= 1);
-
- //Equality
- console.log(x===1);
-
- console.log(x!==1);
+console.log(1==1);
+console.log('1'==1);
+console.log(true ==1);
