@@ -1,23 +1,8 @@
-//speed Limit = 70
-// 5 -> 1 point
-// 12 points -> suspended
-checkSpeed(90);
+showNumber(10);
 
-console.log(checkSpeed(200));
-
-function checkSpeed(speed){
-    if(speed < 70){
-        return 'ok';
+function showNumber(limit){
+    for(let i=0 ; i<limit ;i ++){
+        if(i%2 ===0) console.log(i ,'Even');
+        else console.log(i,'Odd');
     }
-    else if(speed>70 && speed<180)
-    {
-      let point = Math.floor((180 - speed) / 5);
-      return point;
-    }
-
-    else if(speed >= 180)
-    {
-        return 'licence suspended';
-    }
-
 }
