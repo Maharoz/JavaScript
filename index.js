@@ -1,13 +1,13 @@
-let i = 0;
+//returning the max number
 
-while(i<=10){
-   // if(i===5) break;
-
-   if(i%2===0){
-       i++;
-       continue;
-   }
-    console.log(i);
-    i++;
+function maxNumber(number1,number2){
+    if(number1 > number2)
+    return number1
+    else if (number1<number2)
+    return number2
+    else
+    return 'equal'
 }
 
+let number = maxNumber(2,5);
+console.log(number)
