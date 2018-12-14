@@ -1,13 +1,7 @@
-//returning the max number
+//Landscape or potrait
 
-function maxNumber(number1,number2){
-    if(number1 > number2)
-    return number1
-    else if (number1<number2)
-    return number2
-    else
-    return 'equal'
+function isLandscape(width,height){
+    return (width > height) ;
 }
 
-let number = maxNumber(2,5);
-console.log(number)
+console.log(isLandscape(800,600));
