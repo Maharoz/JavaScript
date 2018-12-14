@@ -1,8 +1,11 @@
-showNumber(10);
+const array = [ 0 , null , undefined , '' ,2 , 3];
 
-function showNumber(limit){
-    for(let i=0 ; i<limit ;i ++){
-        if(i%2 ===0) console.log(i ,'Even');
-        else console.log(i,'Odd');
-    }
+console.log(countTruthy(array));
+
+function countTruthy(array){
+    let count = 0 ;
+     for (let value of array)
+     if(value)
+     count ++
+     return count;
 }
