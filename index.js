@@ -1,6 +1,6 @@
-let userColor ='red';
-let defaultColor = 'blue';
-let currentColor = userColor || defaultColor; 
+//1= 00000001
+//2= 000000010
+//3= 000000011
 
-console.log(currentColor);//red;
-
+console.log(1 | 2); //Bit wise OR
+console.log(1 & 2); //Bit wise And
