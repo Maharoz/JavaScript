@@ -1,13 +1,16 @@
 const circle = {
-    radius : 1
+    radius:1,
+    draw(){
+        console.log('draw');
+
+    }
 };
 
-circle.color = ' yellow';
-circle.draw = function(){
+for(let key in circle)
+console.log(key,circle[key]);
 
-}
+for(let key of Object.keys(circle))
+console.log(key);
 
-delete circle.color;
-delete circle.draw;
-
-console.log(circle);
+for(let entry of Object.entries(circle))
+console.log(entry);
