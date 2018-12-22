@@ -1,16 +1,13 @@
-const circle = {
-    radius:1,
-    draw(){
-        console.log('draw');
+const numbers = [3,4];
 
-    }
-};
+//end
+numbers.push(5,6);
+console.log(numbers);
 
-for(let key in circle)
-console.log(key,circle[key]);
+//beginning
+numbers.unshift(1,2);
+console.log(numbers);
 
-for(let key of Object.keys(circle))
-console.log(key);
-
-for(let entry of Object.entries(circle))
-console.log(entry);
+//middle
+numbers.splice(2,0,'a','b');
+console.log(numbers);
