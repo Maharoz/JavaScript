@@ -52,27 +52,30 @@
 // const removedElements = hobbies.splice(0, 1);
 // console.log(hobbies);
 
-// const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
-// //const storedResults = testResults.slice(0, 2);
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+//const storedResults = testResults.slice(0, 2);
 
-// const storedResults = testResults.concat([3.99, 2]);
-// testResults.push(5.91);
+const storedResults = testResults.concat([3.99, 2]);
+testResults.push(5.91);
 
-// console.log(storedResults, testResults);
+console.log(storedResults, testResults);
 // concat.log(testResults.indexOf(1.5));
-const personData = [{ name: "Max" }, { name: "Manuel" }];
 
-const manuel = personData.find((person, idx, persons) => {
-  return person.name === "Manuel";
-});
+console.log(testResults.includes(10.99));
 
-manuel.name = "Anna";
+// const personData = [{ name: "Max" }, { name: "Manuel" }];
 
-console.log(manuel, personData);
+// const manuel = personData.find((person, idx, persons) => {
+//   return person.name === "Manuel";
+// });
 
-const maxIndex = personData.findindex((person, idx, persons) => {
-  return person.name === "Max";
-});
+// manuel.name = "Anna";
 
-console.log(maxIndex);
+// console.log(manuel, personData);
+
+// const maxIndex = personData.findindex((person, idx, persons) => {
+//   return person.name === "Max";
+// });
+
+// console.log(maxIndex);
 //console.log(personData.indexOf({ name: "Max" }));
