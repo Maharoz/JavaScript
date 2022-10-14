@@ -52,16 +52,16 @@
 // const removedElements = hobbies.splice(0, 1);
 // console.log(hobbies);
 
-const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
-//const storedResults = testResults.slice(0, 2);
+// const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+// //const storedResults = testResults.slice(0, 2);
 
-const storedResults = testResults.concat([3.99, 2]);
-testResults.push(5.91);
+// const storedResults = testResults.concat([3.99, 2]);
+// testResults.push(5.91);
 
-console.log(storedResults, testResults);
+// console.log(storedResults, testResults);
 // concat.log(testResults.indexOf(1.5));
 
-console.log(testResults.includes(10.99));
+//console.log(testResults.includes(10.99));
 
 // const personData = [{ name: "Max" }, { name: "Manuel" }];
 
@@ -79,3 +79,17 @@ console.log(testResults.includes(10.99));
 
 // console.log(maxIndex);
 //console.log(personData.indexOf({ name: "Max" }));
+
+const prices = [10.99, 5.99, 6.59];
+const tax = 0.19;
+const taxAdjustedPrices = [];
+
+// for (const price of prices) {
+//   taxAdjustedPrices.push(price * (1 + tax));
+// }
+
+prices.forEach((price, idx, prices) => {
+  const priceObj = { index: idx, taxAdjustedPrices: price * (1 + tax) };
+  taxAdjustedPrices.push(priceObj);
+});
+console.log(taxAdjustedPrices);
