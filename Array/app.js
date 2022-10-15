@@ -116,3 +116,15 @@ console.log(sortedPrices.reverse());
 const filteredArray = prices.filter((price) => price > 6);
 
 console.log(filteredArray);
+
+// const sum = 0;
+// prices.forEach((price) => {
+//   sum += price;
+// });
+
+// console.log(sum);
+const sum = prices.reduce((prevValue, curValue) => {
+  return prevValue + curValue;
+}, 0);
+
+console.log(sum);
