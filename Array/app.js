@@ -139,3 +139,18 @@ console.log(transformedData);
 const nameFragments = ["Max", "Schwarz"];
 const name = nameFragments.join();
 console.log(name);
+
+const copiedNamedFragments = [...nameFragments];
+console.log(nameFragments, copiedNamedFragments);
+
+console.log(Math.min(...prices));
+
+const persons = [
+  { name: "Max", age: 30 },
+  { name: "Manuel", age: 31 },
+];
+
+const copiedPersons = [...persons];
+
+persons.push({ name: "Anna", age: 29 });
+console.log(persons, copiedPersons);
