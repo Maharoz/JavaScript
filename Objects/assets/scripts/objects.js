@@ -1,4 +1,4 @@
-const person = {
+person = {
   name: "Max",
   age: 30,
   hobbies: ["Sports", "Cooking"],
@@ -7,4 +7,8 @@ const person = {
   },
 };
 
-person.greet();
+person.age = 31;
+delete person.age;
+person.isAdmin = true;
+
+console.log(person);
